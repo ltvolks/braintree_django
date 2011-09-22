@@ -102,7 +102,8 @@ class BraintreeForm(forms.Form):
         # This is required because of the strange naming scheme that uses
         # characters not supported in Python variable names.
         labels = self._flatten_dictionary(self.tr_labels)
-        helptext = self._flatten_dictionary(self.tr_help)
+        helptext = self._flatten_dictionary(self.tr_help) 
+        
         for key in self._flatten_dictionary(self.tr_fields).keys():
             if key in labels:
                 label = labels[key]

@@ -32,9 +32,9 @@ Download and install the django_braintree module, then create a form in one of y
 
     # Braintree sandbox settings
     BRAINTREE_ENV = braintree.Environment.Sandbox
-    BRAINTREE_MERCHANT = 'your_merchant_key'
-    BRAINTREE_PUBLIC_KEY = 'your_public_key'
-    BRAINTREE_PRIVATE_KEY = 'your_private_key'
+    BRAINTREE_MERCHANT_SECRET = 'your_merchant_key'
+    BRAINTREE_PUBLIC_KEY_SECRET = 'your_public_key'
+    BRAINTREE_PRIVATE_KEY_SECRET = 'your_private_key'
 
     # If you cannot install M2Crypto (e.g. AppEngine):
     BRAINTREE_UNSAFE_SSL = True
